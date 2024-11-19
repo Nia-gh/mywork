@@ -115,6 +115,42 @@ body {
     margin-bottom: 6px;
 }
 
+.top-container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.info .pr-1 {
+    color: #8D8D8D;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.info .pr-2 {
+    color: #8D8D8D;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 3px 0 10px 0;
+}
+
+.info .pr-3 {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
 .info h3 {
     font-size: 14px;
     font-weight: 700;
@@ -189,6 +225,32 @@ body {
     border-radius: 8px;
     padding: 10px;
     background-color: #fff;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.item .vertical-line {
+    width: 2px;
+    height: 50px;
+    background-color: #FF9D3A;
+}
+
+.item img {
+    width: 38px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-left: -10px;
+}
+
+.item p {
+    font-size: 12px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
 }
 
 .profile-container {
@@ -357,9 +419,9 @@ body {
     .id-card {
         width: 40%
     }
-
-    .image-grid {
+    .grid {
         grid-template-columns: repeat(2, 1fr);
+        /* دو ستون در هر ردیف */
     }
 }
 
@@ -379,7 +441,7 @@ body {
         padding: 8px 16px;
     }
 
-    .top-container .image-grid {
+    .top-container .grid {
         grid-template-columns: 1fr;
         gap: 15px;
     }
@@ -423,7 +485,12 @@ body {
     .gallery-textt {
         font-size: 15px
     }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
+
 
 @media (max-width: 786px) and (min-width: 544px) {
     .taglinee {
